@@ -21,11 +21,18 @@ public class Perfil {
     private String email;
     private String celular;
     private int edad;
+    
+    //El siguiente es para la ultima localizacion, (aun no el historial)
+    private Localizacion loca;
 
     @Override
     public String toString() {
-        return "Perfil{" + "id=" + id + ", nombre=" + nombre + ", paterno=" + paterno + ", email=" + email + ", celular=" + celular + ", edad=" + edad + '}';
+        return "Perfil{" + "id=" + id + ", nombre=" + nombre + ", paterno=" + paterno + ", email=" + email + ", celular=" + celular + ", edad=" + edad + ", loca=" + loca + '}';
     }
+    
+    
+
+    
     
 
   
@@ -78,6 +85,14 @@ public class Perfil {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public Localizacion getLoca() {
+        return loca;
+    }
+
+    public void setLoca(Localizacion loca) {
+        this.loca = loca;
     }
 
    
